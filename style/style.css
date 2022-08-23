@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(12, 120, 154);
+    border: 5px blue solid;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+}
+
+.main {
+    background-image: url(/imgs/8320405-xray-fabric-by-rosalarian.jpg);
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 55px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "section1 section2 section3"
+        "section1 section2 section3"
+        "section1 section2 section3";
+    align-items: start;
+    align-content: space-evenly;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.main img {
+    width: 200px;
+    height: 200px;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: rgba(12, 121, 154, 0.574);
+    text-align: center;
+}
+
+.section1 img {
+    height: 700px;
+    width: 450px;
+}
+
+.section3 {
+    grid-area: section3;
+    background-color: rgba(12, 121, 154, 0.574);
+    text-align: center;
+}
+
+.section3 img {
+    height: 700px;
+    width: 350px;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: rgba(12, 121, 154, 0.574);
+    text-align: center;
+}
+
+.section2 img {
+    width: 700px;
+    height: 400px;
+}
+
+.libros { 
+    background-image: url(/imgs/8320405-xray-fabric-by-rosalarian.jpg);
+     display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.5fr repeat(4, 1fr);
+        gap: 15px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "titulo titulo titulo titulo"
+          "img1 img1 img2 img2"
+          "img3 img3 img4 img4"
+          "img5 img5 img6 img6"
+          "img7 img7 img8 img8";
+           align-content: space-around;
+            justify-items: center;
+      }
+         
+  .libros img {
+    width: 400px;
+    height: 350px;
+  }
+      .titulo { 
+        background-color: rgba(8, 108, 158, 0.563);
+        grid-area: titulo;
+        width: 750px;
+        border: 5px black solid; 
+    text-align: center;}
+        
+      
+      .img1 {
+        background-color: rgba(8, 108, 158, 0.563);
+        grid-area: img1;
+    text-align: center;
+border: 5px black solid; }
+      
+      .img2 { 
+        background-color: rgba(8, 108, 158, 0.563);
+        grid-area: img2;
+        text-align: center;
+        border: 5px black solid; }
+      
+      .img3 {
+        background-color: rgba(8, 108, 158, 0.563);
+        grid-area: img3;
+        text-align: center;
+        border: 5px black solid; }
+      
+      .img4 {
+        background-color: rgba(8, 108, 158, 0.563);
+        grid-area: img4;
+        border: 5px black solid;
+        text-align: center;}
+      
+      .img5 { 
+        background-color: rgba(8, 108, 158, 0.563);
+        grid-area: img5;
+        text-align: center;
+        border: 5px black solid; }
+
+      .img6 { grid-area: img6;
+        background-color: rgba(8, 108, 158, 0.563);
+        text-align: center;
+        border: 5px black solid; }
+      
+      .img7 { grid-area: img7;
+        background-color: rgba(8, 108, 158, 0.563);
+        text-align: center;
+        border: 5px black solid; }
+      
+      .img8 { grid-area: img8;
+        background-color: rgba(8, 108, 158, 0.563);
+        text-align: center;
+        border: 5px black solid; }
+       
+.footer {
+    display: flex;
+  background-color: rgb(12, 120, 154);
+    border: 5px rgb(35, 167, 8) solid;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+.footer ul {
+list-style: none;
+}
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 809px) {
+    .footer {
+        display: flex;
+        background-color: blue;
+        border: 4px dotted green;
+    }
+    .libros {
+        width: 100vh;
+          display: grid;
+        grid-template-columns: repeat(4, 25vh);
+        grid-template-rows: 0.5fr repeat(4, 1fr);
+        gap: 15px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "titulo titulo titulo titulo"
+          "img1 img1 img2 img2"
+          "img3 img3 img4 img4"
+          "img5 img5 img6 img6"
+          "img7 img7 img8 img8";
+      }
+     .libros img {
+        width: 150px;
+        height: 150px;
+      }
+      .titulo {
+        width: 100vh;
+
+      }
+      .header {
+        width: 100vh;
+      }
+      .footer {
+        width: 100vh;
+      }
+.main {
+    width: 100vh;
+}
+.main img {
+    width: 50px;
+    height: 50px;
+}
+}
