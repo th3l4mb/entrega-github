@@ -262,3 +262,11 @@ list-style: none;
   height: 50px;
 }
 }
+.pruebasDeGit {
+display: flex;
+border: 5px solid black;
+}
+.pruebasDeGit img {
+width: 100px;
+height: 100px;
+}
