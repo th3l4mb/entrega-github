@@ -91,7 +91,7 @@
      display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 0.5fr repeat(4, 1fr);
-        gap: 15px 15px;
+        gap: 20px 15px;
         grid-auto-flow: row;
         grid-template-areas:
           "titulo titulo titulo titulo"
@@ -217,5 +217,47 @@ list-style: none;
 .main img {
     width: 50px;
     height: 50px;
+}
+}
+@media (max-width: 1073px) {
+  .footer {
+      display: flex;
+      background-color: blue;
+      border: 4px dotted green;
+  }
+  .libros {
+      width: 100vh;
+        display: grid;
+      grid-template-columns: repeat(4, 25vh);
+      grid-template-rows: 0.5fr repeat(4, 1fr);
+      gap: 15px 15px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "titulo titulo titulo titulo"
+        "img1 img1 img2 img2"
+        "img3 img3 img4 img4"
+        "img5 img5 img6 img6"
+        "img7 img7 img8 img8";
+    }
+   .libros img {
+      width: 150px;
+      height: 150px;
+    }
+    .titulo {
+      width: 100vh;
+
+    }
+    .header {
+      width: 100vh;
+    }
+    .footer {
+      width: 100vh;
+    }
+.main {
+  width: 100vh;
+}
+.main img {
+  width: 50px;
+  height: 50px;
 }
 }
